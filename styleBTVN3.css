@@ -20,13 +20,14 @@ html, body{
     display:flex;
 }
 .left{
+    
     left: 0;;
     width: 20%;
 
     background-color: #ce301e;
 }
 .left div{
-    height: 50px;
+    height: 15%;
     padding-left: 20px;
     color:yellow;
     /* line-height: 50px; */
