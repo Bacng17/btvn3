@@ -11,11 +11,11 @@
         <div class="header">header</div>
         <div class="body">
             <div class="left">
-                <div>HOME</div>
-                <div>PRODUCT</div>
-                <div>DOWNLOAD</div>
-                <div>CONTACT</div>
-                <div>OTHER</div>
+                <div class="L2">HOME</div>
+                <div class="L2">PRODUCT</div>
+                <div class="L2">DOWNLOAD</div>
+                <div class="L2">CONTACT</div>
+                <div class="L2">OTHER</div>
 
             </div>
             <div class="main">main</div>
@@ -23,5 +23,20 @@
         </div>
         <div class="footer">footer</div>
     </div>
+    <script>
+        const box = document.querySelectorAll('.L2');
+        box.forEach(function(value){
+            value.addEventListener('mouseenter', () => {
+                if(value.classList.contains('animate')){
+                    value.classList.remove('animate');
+                    value.classList.add('animate2');
+                } else{
+                    value.classList.remove('animate2');
+                    value   .classList.add('animate');
+                }
+                // Thêm lớp 'animate' để kích hoạt hoạt ảnh
+            });
+        })
+    </script>
 </body>
 </html>

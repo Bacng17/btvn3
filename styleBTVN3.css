@@ -26,12 +26,28 @@ html, body{
     background-color: #ce301e;
 }
 .left div{
+    height: 50px;
     padding-left: 20px;
     color:yellow;
-    line-height: 50px;
+    /* line-height: 50px; */
 }
 .left div:hover{
     background-color: rgb(135, 135, 236);
+}
+.animate{
+    /* position:absolute; */
+    background-color: rgb(135, 135, 236);
+
+    animation-name: ani1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.animate2{
+    background-color: #ce301e;
+
+    animation-name: ani2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 .main{
     width: 60%;
@@ -49,4 +65,22 @@ html, body{
 .footer{
     height: 20%;
     background-color: rgb(119, 250, 115);
+}
+
+@keyframes ani1{
+    from  {
+        transform:translateX(0);
+        
+    }
+    to {
+        transform:translateX(400%);
+    }
+}
+@keyframes ani2{
+    from  {
+        transform:translateX(400%);   
+    }
+    to {
+        transform:translateX(0);
+    }
 }
